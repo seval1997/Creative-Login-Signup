@@ -18,8 +18,8 @@ div.contentContainer {
 }
 
 div.loginContainer {
-    width: 50%;
-    height: 60vh;
+    width: 60%;
+    height: 80vh;
     border: 1px solid;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -42,7 +42,7 @@ div.loginInfoContainer, div.signUpInfoContainer{
 div.loginInfoContainer > p, div.signUpInfoContainer > p {
     width: 80%;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 div.loginCredentailsContainer, div.signUpInputContainer {
@@ -58,6 +58,7 @@ div.loginCredentailsContainer, div.signUpInputContainer {
 
 div.inputDiv > p {
     position: relative;
+    font-weight: bold;
     background-color: #FAF9F6;
     top: 15px;
     left: 30%;
@@ -76,6 +77,7 @@ input {
 
 div.submitDiv > p {
     width: 80%;
+    font-weight: bold;
     text-align: center;
     font-size: 1.2rem;
     margin: 20px 0px;
@@ -110,8 +112,8 @@ div.circleContainer > p {
 }
 
 div.signupContainer {
-    width: 50%;
-    height: 60vh;
+    width: 60%;
+    height: 80vh;
     border: 1px solid;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -130,6 +132,19 @@ div.showContainer {
     visibility: visible;
     opacity: 1;
     transition: all 1s ease-in-out;
+}
+
+@media screen and (max-width: 1100px) {
+
+    div.loginContainer, div.signupContainer {
+        width: 70%;
+    }
+
+    div.loginInfoContainer > p, div.signUpInfoContainer > p {
+        width: 100%;
+        font-size: 1.1rem;
+    }
+
 }
 
 
